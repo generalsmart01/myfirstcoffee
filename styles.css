@@ -9,6 +9,134 @@ body {
   font-family: "Marcellus", serif;
   font-size: 14px;
 }
-.text {
-    color: blue;
+img {
+  width: 100%;
+}
+button {
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
+/* PRODUCT PAGE */
+.product-page {
+  padding: 20px 0;
+  background-color: #fff9f1;
+}
+.product-hero-img {
+  width: 200px;
+  margin-inline-start: -62px;
+  /* position: absolute; */
+}
+.product-hero {
+  width: 80%;
+  margin: 20px auto;
+  text-align: center;
+}
+.product-hero h2 {
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 60.19px;
+  margin-bottom: 12px;
+}
+.product-hero p {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 25.08px;
+  color: #6c6c6c;
+  margin-bottom: 30px;
+}
+.navigation-arrow {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+}
+.navigation-arrow p {
+  font-weight: 900;
+  font-size: 45px;
+}
+.product-card-wrapper {
+  margin: 15px 0;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  max-width: 1000px;
+  margin: 0 auto;
+  gap: 24px;
+}
+.product-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.product-img {
+  display: flex;
+  justify-content: center;
+  padding: 45px 30px;
+  background: #e8e0ca;
+}
+.product-img img {
+  width: 90px;
+  height: 90px;
+}
+.product-card-details {
+  padding: 10px;
+  height: 160px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+.title,
+.price {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  font-family: "Anek Telugu", sans-serif;
+}
+.title {
+  color: #5b5b5b;
+  text-transform: uppercase;
+}
+.price {
+  color: #bf9016;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.order-btn-wrapper {
+  display: flex;
+  justify-content: center;
+}
+.order-btn {
+  border: 1px solid #5b5b5b;
+  padding: 10px 30px;
+  display: flex;
+  justify-content: center;
+  font-family: "Anek Telugu", sans-serif;
+}
+
+/* MEDIA QUERY */
+@media (min-width: 430px) {
+  .product-card-wrapper {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+@media (min-width: 768px) {
+  .product-hero-container {
+    display: flex;
+    justify-content: center;
+  }
+  .product-hero {
+    width: 70%;
+    margin-top: 44px;
+  }
+  .product-hero h2 {
+    font-size: 64px;
+    line-height: 80.25px;
+  }
+  .navigation-arrow {
+    display: none;
+  }
+  .product-card-wrapper {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
 }
