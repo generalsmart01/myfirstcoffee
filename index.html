@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Anek+Telugu:wght@100..800&family=Marcellus&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <title>My First Coffee | Home</title>
+
+<body>
+    <header>
+        <div class="brand-logo">
+            <img src="./img/image 10.png" /> <span>MY FIRST COFFEE</span>
+        </div>
+        <nav>
+            <ul role="list" aria-expanded="false" aria-label="dropdown menu" class="dropdown-items">
+                <li role="listitem"><a href="/pages/product.html">Shop</a></li>
+                <li role="listitem"><a href="#">About us</a></li>
+                <li role="listitem"><a href="#">Menu</a></li>
+                <li role="listitem"><a href="#">Contact</a></li>
+                <li role="listitem"><a href="#">Blog</a></li>
+                <li role="listitem"><a href="#"><i class='bx bx-search'></i>
+                    </a></li>
+                <li role="listitem"><a href="#">Shop</a></li>
+            </ul>
+        </nav>
+
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+
+    </header>
+
+    <section id="hero-section">
+        <h1>Awaken Your Senses with Every Sip and Bite at My First Coffee</h1>
+        <div class="hero-section-images">
+            <img src="./img/image 15.png" alt="spilled brown coffee" class="spill-coffee-grain" />
+            <img src="./img/coffee-cup.png" alt="coffee cup" class="coffee-cup" />
+        </div>
+    </section>
+
+    <div class="hero-section-thumbnail">
+        <img src="./img/burger.png" alt="burger" class="hero-burger">
+        <!-- <img src="./img/chicken-wing.png" alt="chicken wings" class="hero-chicken"> -->
+    </div>
+    <img src="./img/yam-chips.png" alt="yam chips" class="hero-yam-chips">
+
+    <section id="story">
+        <h2>Our Story</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur repudiandae dicta doloremque quam cum
+            dolorum blanditiis reiciendis maiores delectus, a odio vitae qui numquam quas maxime esse architecto nobis
+            tempora!</p>
+        <img src="./img/cofee-seed2.png" alt="coffee seeds">
+    </section>
+
+    <section id="meal">
+        <div class="meal-heading">
+            <h2>Our Meals</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid, quisquam repellendus a debitis atque
+                accusantium. Et minima vero adipisci sit ipsam, fugiat eveniet sint a!s</p>
+        </div>
+        <div class="meals">
+            <div class="meal-item" data-name="Latte" data-price="3000">
+                <img src="latte.jpg" alt="Latte">
+                <p>Latte</p>
+                <p>3000</p>
+                <button onclick="addToOrder('Latte', 3000)">Order</button>
+            </div>
+            <div class="meal-item" data-name="Ham Cheese" data-price="3000">
+                <img src="ham_cheese.jpg" alt="Ham Cheese">
+                <p>Ham Cheese</p>
+                <p>3000</p>
+                <button onclick="addToOrder('Ham Cheese', 3000)">Order</button>
+            </div>
+
+        </div>
+    </section>
+    <!-- <div class="grid-container">
+        <div class="grid-item"><img src="./img/pancake2.png" alt="Pancakes"></div>
+        <div class="grid-item"><img src="./img/sandwich.png" alt="Latte"></div>
+        <div class="grid-item"><img src="./img/spilled-coffee-seeds.png" alt="Fried Chicken"></div>
+        <div class="grid-item"><img src="./img/Frame 1321316059.png" alt="Charcuterie"></div>
+        <div class="grid-item"><img src="./img/machiato.png" alt="Cocktails"></div>
+        <div class="grid-item"><img src="./img/ham-cheesse.png" alt="Biscuits"></div>
+        <div class="grid-item"><img src="./img/burger2.png" alt="Coffee"></div>
+    </div> -->
+
+    <section id="ads">
+        <div class="ads-content">
+            <div>
+                <h1>Discover Our Newest Flavour</h1>
+                <p><span>50% off</span> your next order</p>
+            </div>
+            <img src="./img/image 43.png" alt="spoon of coffee">
+        </div>
+    </section>
+    <footer>
+        <div class="brand-logo">
+            <img src="./img/image 10.png" /> <span>MY FIRST COFFEE</span>
+        </div>
+        <div class="footer-links">
+            <div class="connect">
+                <h3>Connect with us</h3>
+
+                <p>+234 8155334477</p>
+                <p>+234 8155334477</p>
+                <p>info@ejefarm.io</p>
+                <p>Plot 1 Okpe Street, Obijago.</p>
+                <p>Plot 1 Okpe Street, Obijago.</p>
+            </div>
+            <div class="company">
+                <h3>Company</h3>
+                <a href="#">
+                    <p>About Us</p>
+                </a>
+                <a href="#">
+                    <p>Our Service</p>
+                </a>
+                <a href="#">
+                    <p>Contact Us</p>
+                </a>
+            </div>
+            <div class="resources">
+                <h3>Privacy Policy</h3>
+                <a href="#">
+                    <p>Terms and Conditions</p>
+                </a>
+                <a href="#">
+                    <p>Help Center</p>
+                </a>
+            </div>
+
+        </div>
+
+    </footer>
+</body>
+
+<script src="./js/script.js"></script>
+
+</html>
