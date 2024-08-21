@@ -1,18 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coffee Shop</title>
-    <link rel="stylesheet" href="../styles.css" />
+    <link rel="stylesheet" href="../css/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Marcellus&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Marcellus&display=swap" rel="stylesheet" />
 </head>
+
 <body>
+    <header>
+        <div class="brand-logo">
+            <img src="../img/image 10.png" /> <span>MY FIRST COFFEE</span>
+        </div>
+        <nav>
+            <ul role="list" aria-expanded="false" aria-label="dropdown menu" class="dropdown-items">
+                <li role="listitem"><a href="/pages/product.html">Shop</a></li>
+                <li role="listitem"><a href="#">About us</a></li>
+                <li role="listitem"><a href="#">Menu</a></li>
+                <li role="listitem"><a href="#">Contact</a></li>
+                <li role="listitem"><a href="#">Blog</a></li>
+                <li role="listitem"><a href="#"><i class='bx bx-search'></i>
+                    </a></li>
+                <li role="listitem"><a href="#">Shop</a></li>
+            </ul>
+        </nav>
+
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+
+    </header>
     <div class="product-page">
         <div class="product-hero-container">
 
@@ -21,7 +44,9 @@
             </div>
             <div class="product-hero">
                 <h2>Shop</h2>
-                <p>"Savor the Morning Symphony at My first coffee where every dish is a harmonious blend of flavors designed to elevate your breakfast experience. Our meticulously curated meal section invites you to explore a world of culinary delights, each crafted with care and passion.</p>
+                <p>"Savor the Morning Symphony at My first coffee where every dish is a harmonious blend of flavors
+                    designed to elevate your breakfast experience. Our meticulously curated meal section invites you to
+                    explore a world of culinary delights, each crafted with care and passion.</p>
                 <span class="navigation-arrow">
                     <p>&lt;</p>
                     <p>&gt;</p>
@@ -29,10 +54,50 @@
             </div>
         </div>
         <div class="product-card-wrapper" id="product-card-wrapper">
-            
+
         </div>
     </div>
+    <footer>
+        <div class="brand-logo">
+            <img src="../img/image 10.png" /> <span>MY FIRST COFFEE</span>
+        </div>
+        <div class="footer-links">
+            <div class="connect">
+                <h3>Connect with us</h3>
 
-    <script src="../script.js"></script>
+                <p>+234 8155334477</p>
+                <p>+234 8155334477</p>
+                <p>info@ejefarm.io</p>
+                <p>Plot 1 Okpe Street, Obijago.</p>
+                <p>Plot 1 Okpe Street, Obijago.</p>
+            </div>
+            <div class="company">
+                <h3>Company</h3>
+                <a href="#">
+                    <p>About Us</p>
+                </a>
+                <a href="#">
+                    <p>Our Service</p>
+                </a>
+                <a href="#">
+                    <p>Contact Us</p>
+                </a>
+            </div>
+            <div class="resources">
+                <h3>Privacy Policy</h3>
+                <a href="#">
+                    <p>Terms and Conditions</p>
+                </a>
+                <a href="#">
+                    <p>Help Center</p>
+                </a>
+            </div>
+
+        </div>
+
+    </footer>
+
+    <script src="../js/script.js"></script>
 </body>
+
 </html>
