@@ -684,7 +684,7 @@ footer span {
     } */
 
     .bar {
-        background-color: var(--secondary-clr);
+        background-color: var(--primary-clr);
     }
 
     header #mobile-toggles {
@@ -706,6 +706,11 @@ footer span {
         backdrop-filter: blur(60px);
         transition: all 0.6s ease-in-out;
         z-index: 50;
+    }
+
+    .navbar .bx,
+    .navbar .nav-item:last-child {
+        display: none;
     }
 
     .navbar.active {
