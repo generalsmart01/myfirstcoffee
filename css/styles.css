@@ -75,7 +75,8 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    position: absolute;
+    position: fixed;
+    background-color: var(--secondary-clr);
     width: 100%;
     padding: 1.2rem 4rem;
     z-index: 7;
@@ -88,12 +89,16 @@ header .bx {
 header img {
     width: auto;
     height: 3rem;
+    position: relative;
+    z-index: 9;
 }
 
-.brand-logo {
+header .brand-logo {
     display: flex;
     align-items: center;
     gap: 10px;
+    position: relative;
+    z-index: 9;
 }
 
 header span {
@@ -152,7 +157,7 @@ img.hero-yam-chips {
     position: absolute;
     top: 0;
     left: 0;
-    z-index: 6;
+    z-index: 7;
 }
 
 img.hero-burger {
@@ -452,14 +457,14 @@ img.hero-chicken {
 
 .product-hero h2 {
     font-weight: 400;
-    font-size: 48px;
+    font-size: 30px;
     line-height: 60.19px;
     margin-bottom: 12px;
 }
 
 .product-hero p {
     font-weight: 400;
-    font-size: 20px;
+    font-size: 16px;
     line-height: 25.08px;
     color: #6c6c6c;
     margin-bottom: 30px;
@@ -552,6 +557,75 @@ img.hero-chicken {
     color: #fff;
     font-weight: 500;
     transition: all .4s ease-in-out;
+}
+
+
+/* OUR MENU PAGE STYLING */
+#story .left {
+    width: 10rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.btns {
+    padding: 2rem 7rem;
+
+}
+
+.showcase-menu-2 .btn {
+    width: 200px;
+    padding: 10px;
+    margin: 9px;
+    border: 1px solid var(--primary-clr);
+    border: 0;
+    cursor: pointer;
+}
+
+.showcase-menu-2 .btn-c {
+    width: 200px;
+    padding: 10px;
+    margin: 9px;
+    background-color: var(--primary-clr);
+    border: 1px solid var(--primary-clr);
+    color: white;
+    cursor: pointer;
+    /* box-shadow: 2px 2px 3px 3px wheat; */
+    border: 0;
+}
+
+#btn-1 .active,
+#btn-3 .btn:first-child {
+    background-color: var(--primary-clr);
+    border: 1px solid var(--primary-clr);
+    color: var(--secondary-clr);
+}
+
+.showcase-menu-2 .btn {
+    background-color: var(--secondary-clr);
+    border: 1px solid var(--primary-clr);
+
+}
+
+.showcase-menu-2 .btn:hover {
+    transition: all ease-in-out;
+    background-color: rgb(84, 64, 14);
+    color: white;
+}
+
+#btn-1 {
+    margin-bottom: 10px;
+}
+
+#btn-3 {
+    margin-top: 10px;
+}
+
+#btn-2 {
+    border: 2px solid rgb(124, 108, 69);
+    max-width: 80vw;
+    margin: 10px;
+
 }
 
 /* FOOTER STYLING STARTS */
@@ -679,10 +753,6 @@ footer span {
 }
 
 @media (max-width: 768px) {
-    /* header nav {
-        display: none;
-    } */
-
     .bar {
         background-color: var(--primary-clr);
     }
@@ -732,6 +802,7 @@ footer span {
         width: 100%;
         height: 100vh;
         gap: 0;
+        padding: 5rem 0;
     }
 
     #hero-section button a {
@@ -742,7 +813,12 @@ footer span {
         text-align: center;
         max-width: 90%;
         font-size: 3rem;
+        padding-top: 4rem;
         padding-bottom: 3rem;
+    }
+
+    .hero-section-images {
+        margin-top: -3rem;
     }
 
     #hero-section .spill-coffee-grain {
@@ -753,6 +829,18 @@ footer span {
         position: absolute;
         margin-top: 3rem;
         width: 18rem;
+    }
+
+    #story h2,
+    #meal h2 {
+        font-size: 2rem;
+        padding-bottom: 1.5rem;
+    }
+
+    #story .coffee-seed,
+    #story .coffee-seed2,
+    #story .left {
+        width: 7rem;
     }
 
     img.hero-burger {
