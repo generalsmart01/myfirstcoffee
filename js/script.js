@@ -1,3 +1,35 @@
+// HAMBURGER MENU
+
+const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector(".navbar");
+const bars = document.querySelectorAll(".bar");
+const navLinks = document.querySelectorAll(".nav-link");
+
+hamburger.addEventListener("click", () => {
+  hamburger.classList.toggle("active");
+  navMenu.classList.toggle("active");
+  const isOpen = navMenu.classList.contains("active");
+  navMenu.setAttribute("aria-expanded", isOpen ? "true" : "false");
+
+  // Change bar color when hamburger is active
+  bars.forEach((bar) => {
+    bar.style.backgroundColor = isOpen ? "#FFF9F1" : "#54400E";
+  });
+});
+
+navLinks.forEach((link) =>
+  link.addEventListener("click", () => {
+    hamburger.classList.remove("active");
+    navMenu.classList.remove("active");
+    navMenu.setAttribute("aria-expanded", "false");
+
+    // Reset bar color when menu is closed
+    bars.forEach((bar) => {
+      bar.style.backgroundColor = "#54400E";
+    });
+  })
+);
+
 // SHOP MEALS
 
 const productCardWrapper = document.getElementById("product-card-wrapper");
