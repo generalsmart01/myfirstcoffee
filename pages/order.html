@@ -1,28 +1,188 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Your Orders</title>
-    <link rel="stylesheet" href="../css//style.css">
-</head>
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
 
-<body>
+  <body>
     <div class="order-page">
-        <h1>Your Orders</h1>
-        <p>Your orders are available, select, edit and make payment</p>
-        <div class="orders"></div>
-        <div class="order-summary">
-            <p>Sub Total: <span id="sub-total">0</span></p>
-            <p>Delivery Fee: <span id="delivery-fee">40</span></p>
-            <p>Discount: <span id="discount">0</span></p>
-            <p>Total Price: <span id="total-price">0</span></p>
-            <button onclick="payNow()">Pay Now</button>
+      <div class="product-hero-container">
+        <div class="product-hero-img">
+          <img src="../img/pancake.png" alt="A pancake" />
         </div>
+        <div class="product-hero">
+          <h2>Your order</h2>
+          <p>Your orders are available, select, edit and make payment</p>
+          <span class="navigation-arrow">
+            <p>&lt;</p>
+            <p>&gt;</p>
+          </span>
+        </div>
+      </div>
+      <div class="orders">
+        <div class="order">
+          <div class="top">
+            <div>
+              <img src="../img/chicken-wing.png" alt="" />
+            </div>
+            <span class="trash">
+              <img src="../img/trash.png" alt="" />
+            </span>
+          </div>
+          <div class="bottom-wrapper">
+            <div class="bottom">
+              <span class="bottom-title">
+                <h2>Morning Coffee</h2>
+                <p>2x</p>
+              </span>
+              <p class="size">Size: 25kg</p>
+              <p class="bottom-title-price">3000</p>
+              <span class="quantity">
+                <p class="decrease">-</p>
+                <p class="number">2</p>
+                <p class="increase">+</p>
+              </span>
+            </div>
+            <div>
+              <span class="trash-mobile">
+                <img src="../img/trash.png" alt="" />
+              </span>
+              <h2 class="quantity2">2x</h2>
+            </div>
+          </div>
+        </div>
+        <div class="order">
+          <div class="top">
+            <div>
+              <img src="../img/chicken-wing.png" alt="" />
+            </div>
+            <span class="trash">
+              <img src="../img/trash.png" alt="" />
+            </span>
+          </div>
+          <div class="bottom-wrapper">
+            <div class="bottom">
+              <span class="bottom-title">
+                <h2>Morning Coffee</h2>
+                <p>2x</p>
+              </span>
+              <p class="size">Size: 25kg</p>
+              <p class="bottom-title-price">3000</p>
+              <span class="quantity">
+                <p class="decrease">-</p>
+                <p class="number">2</p>
+                <p class="increase">+</p>
+              </span>
+            </div>
+            <div>
+              <span class="trash-mobile">
+                <img src="../img/trash.png" alt="" />
+              </span>
+              <h2 class="quantity2">2x</h2>
+            </div>
+          </div>
+        </div>
+        <div class="order">
+          <div class="top">
+            <div >
+              <img src="../img/chicken-wing.png" alt="" />
+            </div>
+            <span class="trash">
+              <img src="../img/trash.png" alt="" />
+            </span>
+          </div>
+          <div class="bottom-wrapper">
+            <div class="bottom">
+              <span class="bottom-title">
+                <h2>Morning Coffee</h2>
+                <p>2x</p>
+              </span>
+              <p class="size">Size: 25kg</p>
+              <p class="bottom-title-price">3000</p>
+              <span class="quantity">
+                <p class="decrease">-</p>
+                <p class="number">2</p>
+                <p class="increase">+</p>
+              </span>
+            </div>
+            <div>
+              <span class="trash-mobile">
+                <img src="../img/trash.png" alt="" />
+              </span>
+              <h2 class="quantity2">2x</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="order-summary">
+        <span class="border"> Summer Sale </span>
+        <div class="order-total">
+          <div class="flex">
+            <h4>Sub Total:</h4>
+            <span id="sub-total">0</span>
+          </div>
+          <div class="flex">
+            <h4>Delivery Fee:</h4>
+            <span id="delivery-fee">40</span>
+          </div>
+          <div class="flex">
+            <h4>Discount:</h4>
+            <span id="discount">0</span>
+          </div>
+        </div>
+        <div class="flex">
+          <div class="">
+            <p class="total-price">Total Price:</p>
+            <span id="total-price">0</span>
+          </div>
+          <button onclick="payNow()" class="pay-btn">Pay Now</button>
+        </div>
+      </div>
+
+      <div>
+        <footer>
+          <div class="brand-logo">
+            <img src="../img/image 10.png" /> <span>MY FIRST COFFEE</span>
+          </div>
+          <div class="footer-links">
+            <div class="connect">
+              <h3>Connect with us</h3>
+
+              <p>+234 8155334477</p>
+              <p>+234 8155334477</p>
+              <p>info@ejefarm.io</p>
+              <p>Plot 1 Okpe Street, Obijago.</p>
+              <p>Plot 1 Okpe Street, Obijago.</p>
+            </div>
+            <div class="company">
+              <h3>Company</h3>
+              <a href="#">
+                <p>About Us</p>
+              </a>
+              <a href="#">
+                <p>Our Service</p>
+              </a>
+              <a href="#">
+                <p>Contact Us</p>
+              </a>
+            </div>
+            <div class="resources">
+              <h3>Privacy Policy</h3>
+              <a href="#">
+                <p>Terms and Conditions</p>
+              </a>
+              <a href="#">
+                <p>Help Center</p>
+              </a>
+            </div>
+          </div>
+        </footer>
+      </div>
     </div>
 
     <script src="../js//main.js"></script>
-</body>
-
+  </body>
 </html>
