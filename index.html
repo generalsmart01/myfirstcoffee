@@ -12,34 +12,47 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
     <title>My First Coffee | Home</title>
 
+</head>
+
 <body>
     <header>
-        <div class="brand-logo">
-            <img src="./img/image 10.png" /> <span>MY FIRST COFFEE</span>
-        </div>
+        <a class="brand-logo" href="/index.html">
+            <img src="./img/image 10.png" alt="My First Coffee Logo" />
+            <span>MY FIRST COFFEE</span>
+        </a>
         <nav>
-            <ul role="list" aria-expanded="false" aria-label="dropdown menu" class="dropdown-items">
-                <li role="listitem"><a href="/pages/product.html">Shop</a></li>
-                <li role="listitem"><a href="#">About us</a></li>
-                <li role="listitem"><a href="#">Menu</a></li>
-                <li role="listitem"><a href="#">Contact</a></li>
-                <li role="listitem"><a href="#">Blog</a></li>
-                <li role="listitem"><a href="#"><i class='bx bx-search'></i>
-                    </a></li>
-                <li role="listitem"><a href="#">Shop</a></li>
+            <ul id="primary-nav" role="list" aria-expanded="false" aria-label="dropdown menu" class="navbar">
+                <li role="listitem" class="nav-item"><a href="/pages/product.html" class="nav-link">Shop</a></li>
+                <li role="listitem" class="nav-item"><a href="#" class="nav-link">About us</a></li>
+                <li role="listitem" class="nav-item"><a href="/pages/our-menu.html" class="nav-link">Menu</a></li>
+                <li role="listitem" class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+                <li role="listitem" class="nav-item"><a href="#" class="nav-link">Blog</a></li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link"><i class='bx bx-search'></i></a>
+                </li>
+                <li role="listitem" class="nav-item"><a href="#">Shop</a></li>
             </ul>
         </nav>
 
-        <div class="hamburger">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-        </div>
+        <div id="mobile-toggles">
+            <button>
+                <a href="#"><i class='bx bx-search'></i></a>
+            </button>
 
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+        <img src="./img/yam-chips.png" alt="yam chips" class="hero-yam-chips">
     </header>
 
     <section id="hero-section">
         <h1>Awaken Your Senses with Every Sip and Bite at My First Coffee</h1>
+        <button>
+            <a href="#">Shop</a>
+        </button>
         <div class="hero-section-images">
             <img src="./img/image 15.png" alt="spilled brown coffee" class="spill-coffee-grain" />
             <img src="./img/coffee-cup.png" alt="coffee cup" class="coffee-cup" />
@@ -50,47 +63,47 @@
         <img src="./img/burger.png" alt="burger" class="hero-burger">
         <!-- <img src="./img/chicken-wing.png" alt="chicken wings" class="hero-chicken"> -->
     </div>
-    <img src="./img/yam-chips.png" alt="yam chips" class="hero-yam-chips">
+
 
     <section id="story">
         <h2>Our Story</h2>
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur repudiandae dicta doloremque quam cum
             dolorum blanditiis reiciendis maiores delectus, a odio vitae qui numquam quas maxime esse architecto nobis
             tempora!</p>
-        <img src="./img/cofee-seed2.png" alt="coffee seeds">
+
+        <img src="./img/coffee-seed.png" alt="coffee seeds" class="coffee-seed">
+        <img src="./img/cofee-seed2.png" alt="coffee seeds" class="coffee-seed2">
     </section>
 
     <section id="meal">
+        <img src="./img/pancake.png" alt="coffee seeds" class="pancake">
         <div class="meal-heading">
             <h2>Our Meals</h2>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid, quisquam repellendus a debitis atque
                 accusantium. Et minima vero adipisci sit ipsam, fugiat eveniet sint a!s</p>
         </div>
-        <div class="meals">
-            <div class="meal-item" data-name="Latte" data-price="3000">
-                <img src="latte.jpg" alt="Latte">
-                <p>Latte</p>
-                <p>3000</p>
-                <button onclick="addToOrder('Latte', 3000)">Order</button>
-            </div>
-            <div class="meal-item" data-name="Ham Cheese" data-price="3000">
-                <img src="ham_cheese.jpg" alt="Ham Cheese">
-                <p>Ham Cheese</p>
-                <p>3000</p>
-                <button onclick="addToOrder('Ham Cheese', 3000)">Order</button>
-            </div>
+        <div class="product-card-wrapper" id="product-card-wrapper">
 
         </div>
+
     </section>
-    <!-- <div class="grid-container">
-        <div class="grid-item"><img src="./img/pancake2.png" alt="Pancakes"></div>
-        <div class="grid-item"><img src="./img/sandwich.png" alt="Latte"></div>
-        <div class="grid-item"><img src="./img/spilled-coffee-seeds.png" alt="Fried Chicken"></div>
-        <div class="grid-item"><img src="./img/Frame 1321316059.png" alt="Charcuterie"></div>
-        <div class="grid-item"><img src="./img/machiato.png" alt="Cocktails"></div>
-        <div class="grid-item"><img src="./img/ham-cheesse.png" alt="Biscuits"></div>
-        <div class="grid-item"><img src="./img/burger2.png" alt="Coffee"></div>
-    </div> -->
+
+    <section id="grid-section">
+        <div>
+            <img src="./img/pancake2.png" alt="pancake">
+            <img src="./img/sandwich.png" alt="sandwich">
+        </div>
+        <div>
+            <img src="./img/spilled-coffee-seeds.png" alt="spilled-coffee-seeds">
+            <img src="./img/Frame 1321316059.png" alt="">
+            <img src="./img/Frame 1321316061.png" alt="">
+        </div>
+        <div>
+            <img src="./img/chicken.png" alt="chicken">
+            <img src="./img/burger2.png" alt="burger">
+        </div>
+
+    </section>
 
     <section id="ads">
         <div class="ads-content">
