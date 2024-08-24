@@ -37,6 +37,9 @@ button {
     --secondary-clr: #FFF9F1;
     --tertiary-clr: #ffdd01;
 }
+html {
+    scroll-behavior: smooth;
+}
 
 /* Hamburger Menu Ends */
 .hamburger {

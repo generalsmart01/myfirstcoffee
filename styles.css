@@ -31,6 +31,9 @@ a {
   --secondary-clr: #fff9f1;
   --tertiary-clr: #ffdd01;
 }
+html {
+    scroll-behavior: smooth;
+}
 /* PRODUCT PAGE */
 .product-page {
   padding: 20px 0;
