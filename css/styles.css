@@ -196,6 +196,7 @@ img.hero-chicken {
     max-width: 45%;
     position: relative;
     z-index: 10;
+    color: #CE733F;
 }
 
 #hero-section button a {
@@ -231,7 +232,8 @@ img.hero-chicken {
 /* HERO SECTION ENDS */
 
 #story h2,
-#meal h2 {
+#meal h2,
+#story2 h2 {
     font-size: 3rem;
     padding-bottom: 1.5rem;
 }
@@ -242,6 +244,11 @@ img.hero-chicken {
     text-align: center;
     padding: 5rem 7rem;
     position: relative;
+}
+
+#story2 {
+    text-align: center;
+    padding: 7rem 7rem 5rem 7rem;
 }
 
 #story .coffee-seed {
@@ -265,7 +272,8 @@ img.hero-chicken {
     position: relative;
 }
 
-#meal .pancake {
+#meal .pancake,
+#story2 img {
     position: absolute;
     top: 0;
     left: 0;
@@ -308,6 +316,42 @@ img.hero-chicken {
     cursor: pointer;
 }
 
+/* GRID SECTION STARTS */
+#grid-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 85vh;
+    gap: 1.2rem;
+}
+
+#grid-section>div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+#grid-section>div:first-child {
+    margin-top: 3rem;
+}
+
+#grid-section>div:last-child {
+    margin-top: -3rem;
+}
+
+#grid-section img {
+    width: 10rem;
+    transition: all .4s ease-in-out;
+}
+
+#grid-section img:hover {
+    transform: scale(1.1);
+    transition: all 0.3s ease-in-out;
+}
+
+
+/* ORDER PAGE STARTS */
+
 .order-page .orders {
     margin-top: 20px;
     border-bottom: 1px solid #ddd;
@@ -330,8 +374,6 @@ img.hero-chicken {
     margin-top: 20px;
     text-align: right;
 }
-
-
 
 .grid-container {
     display: grid;
@@ -357,41 +399,6 @@ img.hero-chicken {
     object-fit: cover;
 }
 
-/* Specific grid area placements */
-.grid-item:nth-child(1) {
-    grid-column: 1 / 3;
-    grid-row: 1 / 2;
-}
-
-.grid-item:nth-child(2) {
-    grid-column: 3 / 5;
-    grid-row: 1 / 2;
-}
-
-.grid-item:nth-child(3) {
-    grid-column: 4 / 5;
-    grid-row: 2 / 3;
-}
-
-.grid-item:nth-child(4) {
-    grid-column: 1 / 3;
-    grid-row: 2 / 3;
-}
-
-.grid-item:nth-child(5) {
-    grid-column: 3 / 5;
-    grid-row: 2 / 3;
-}
-
-.grid-item:nth-child(6) {
-    grid-column: 3 / 4;
-    grid-row: 3 / 4;
-}
-
-.grid-item:nth-child(7) {
-    grid-column: 4 / 5;
-    grid-row: 3 / 4;
-}
 
 /* ADS SECTION STYLING STARTS */
 #ads {
@@ -628,6 +635,177 @@ img.hero-chicken {
 
 }
 
+
+/* YOUR ORDER STYLING */
+
+#main-order {
+    padding: 0 5rem 5rem 5rem;
+}
+
+.order {
+    display: flex;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    margin: 10px 0;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+}
+
+.cart-item-image img {
+    width: 60px;
+    height: auto;
+    object-fit: cover;
+}
+
+.cart-item-details {
+    flex-grow: 1;
+    margin-left: 16px;
+}
+
+.item-title {
+    font-size: 18px;
+    margin: 0;
+}
+
+.item-size {
+    font-size: 14px;
+    color: #666;
+}
+
+.item-price {
+    font-size: 20px;
+    color: #d39200;
+    margin: 8px 0;
+}
+
+.item-quantity {
+    display: flex;
+    align-items: center;
+}
+
+.quantity-btn {
+    width: 30px;
+    height: 30px;
+    background-color: #e0e0e0;
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.quantity {
+    margin: 0 10px;
+    font-size: 16px;
+}
+
+.cart-item-actions {
+    display: flex;
+    align-items: center;
+}
+
+.delete-btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.item-count {
+    font-size: 16px;
+    color: #888;
+}
+
+.order-summary {
+    font-weight: bold;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+}
+
+.promo-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    border-bottom: 1px solid var(--primary-clr);
+}
+
+.promo-title {
+    font-size: 16px;
+    color: #666;
+}
+
+.promo-edit-btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.summary-details {
+    margin-bottom: 15px;
+}
+
+.summary-item {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 0;
+}
+
+.summary-label {
+    font-size: 16px;
+    color: #666;
+}
+
+.summary-value {
+    font-size: 16px;
+    color: #333;
+}
+
+.payout {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.total-price {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    font-style: italic;
+    font-size: 12px;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.total-price p {
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.price-value {
+    color: #333;
+}
+
+.pay-now-btn {
+    display: inline-block;
+    padding: 8px 12px;
+    background-color: #8b5c0f;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 15px;
+    font-size: 16px;
+}
+
 /* FOOTER STYLING STARTS */
 footer {
     padding: 3rem 4rem;
@@ -832,6 +1010,7 @@ footer span {
     }
 
     #story h2,
+    #story2 h2,
     #meal h2 {
         font-size: 2rem;
         padding-bottom: 1.5rem;
@@ -848,9 +1027,22 @@ footer span {
         height: 5rem;
     }
 
+    #grid-section img {
+        width: 7rem;
+        transition: all .4s ease-in-out;
+    }
+
     .ads-content {
         padding: 3rem 0 3rem 2rem;
         gap: 0;
+    }
+
+    #main-order {
+        padding: 0 2rem 5rem 2rem;
+    }
+
+    #story2 {
+        padding: 7rem 2rem 5rem 2rem;
     }
 }
 

@@ -128,13 +128,43 @@ function displayProducts(selectedTag) {
           <h4 class="title">${product.name}</h4>
           <p class="price">${product.price}</p>
           <div class="order-btn-wrapper">
-            <button class="order-btn">Order</button>
+            <button class="order-btn" data-name="${product.name}" data-price="${product.price}" data-image="${product.image}">Order</button>
           </div>
         </div>
       </div>
     `;
     productCardWrapper.innerHTML += productCard;
   });
+
+  // Add event listener for order buttons
+  const orderButtons = document.querySelectorAll(".order-btn");
+  orderButtons.forEach((button) => {
+    button.addEventListener("click", function () {
+      const name = this.getAttribute("data-name");
+      const price = parseFloat(this.getAttribute("data-price"));
+      const image = this.getAttribute("data-image");
+
+      addToOrder(name, price, image);
+
+      // Navigate to the order page
+      window.location.href = "/pages/order.html";
+    });
+  });
+}
+
+// Add order to local storage
+function addToOrder(name, price, image) {
+  let orders = JSON.parse(localStorage.getItem("orders")) || [];
+
+  let existingOrder = orders.find((order) => order.name === name);
+
+  if (existingOrder) {
+    existingOrder.quantity += 1;
+  } else {
+    orders.push({ name, price, image, quantity: 1 });
+  }
+
+  localStorage.setItem("orders", JSON.stringify(orders));
 }
 
 // Event listeners for buttons
@@ -154,3 +184,5 @@ buttons.forEach((button) => {
 
 // Display all products by default on initial load
 displayProducts("all");
+
+// ORDER PAYMENT
