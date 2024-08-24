@@ -1,0 +1,343 @@
+/* GENERAL CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Marcellus", serif;
+  font-size: 14px;
+}
+img {
+  width: 100%;
+}
+button {
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+}
+ul li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+:root {
+  --primary-clr: #54400e;
+  --secondary-clr: #fff9f1;
+  --tertiary-clr: #ffdd01;
+}
+/* PRODUCT PAGE */
+.product-page {
+  padding: 20px 0;
+  background-color: #fff9f1;
+}
+.product-hero-img {
+  width: 200px;
+  margin-inline-start: -62px;
+  /* position: absolute; */
+}
+.product-hero {
+  width: 80%;
+  margin: 20px auto;
+  text-align: center;
+}
+.product-hero h2 {
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 60.19px;
+  margin-bottom: 12px;
+}
+.product-hero p {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 25.08px;
+  color: #6c6c6c;
+  margin-bottom: 30px;
+}
+.navigation-arrow {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+}
+.navigation-arrow p {
+  font-weight: 900;
+  font-size: 45px;
+}
+.product-card-wrapper {
+  margin: 15px 0;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  max-width: 1000px;
+  margin: 0 auto;
+  gap: 24px;
+}
+.product-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.product-img {
+  display: flex;
+  justify-content: center;
+  padding: 45px 30px;
+  background: #e8e0ca;
+}
+.product-img img {
+  width: 90px;
+  height: 90px;
+}
+.product-card-details {
+  padding: 10px;
+  height: 160px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+.title,
+.price {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  font-family: "Anek Telugu", sans-serif;
+}
+.title {
+  color: #5b5b5b;
+  text-transform: uppercase;
+}
+.price {
+  color: #bf9016;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.order-btn-wrapper {
+  display: flex;
+  justify-content: center;
+}
+.order-btn {
+  border: 1px solid #5b5b5b;
+  padding: 10px 30px;
+  display: flex;
+  justify-content: center;
+  font-family: "Anek Telugu", sans-serif;
+}
+
+/* MEDIA QUERY */
+@media (min-width: 430px) {
+  .product-card-wrapper {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+@media (min-width: 768px) {
+  .product-hero-container {
+    display: flex;
+    justify-content: center;
+  }
+  .product-hero {
+    width: 70%;
+    margin-top: 44px;
+  }
+  .product-hero h2 {
+    font-size: 64px;
+    line-height: 80.25px;
+  }
+  .navigation-arrow {
+    display: none;
+  }
+  .product-card-wrapper {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+/* ORDER */
+.order-page {
+  background-color: #fff9f1;
+}
+.order {
+  padding: 6px;
+  background-color: #ffffff;
+}
+.top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+}
+.trash {
+  background-color: #f2f1f1;
+  border-radius: 50%;
+  padding: 5px;
+}
+.bottom {
+  margin: 8px;
+}
+.bottom-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+  margin: 8px 0;
+}
+.bottom-title h2 {
+  color: #5b5b5b;
+  font-size: 40px;
+}
+.bottom-title p {
+  color: #5b5b5b;
+  font-size: 24px;
+}
+.size {
+  font-size: 20px;
+}
+.bottom-title-price {
+  font-size: 30px;
+  color: #bf9016;
+}
+.quantity {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.decrease,
+.increase {
+  border: 1px solid #292d3280;
+  padding: 0 3px;
+  display: flex;
+  font-size: 1.5rem;
+  border-radius: 50%;
+}
+.number {
+  font-size: 1rem;
+}
+.orders {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  margin: 0 2rem;
+}
+.trash-mobile {
+  display: none;
+}
+.quantity2 {
+  display: none;
+}
+.order-summary {
+  background-color: #ffffff;
+  padding: 16px;
+  margin: 6rem 2rem;
+}
+.border {
+  font-family: Anek Telugu;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 36px;
+}
+.order-total {
+  border-top: 1px solid black;
+  margin-bottom: 1.5rem;
+  margin-top: 4px;
+  padding-top: 2rem;
+}
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.flex h4 {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 28.18px;
+}
+.flex span {
+  font-size: 20px;
+  line-height: 28.18px;
+}
+.pay-btn {
+  background-color: #54400e;
+  color: #ffffff;
+  padding: 0.75rem;
+}
+.total-price {
+  font-size: 16px;
+  color: #6c6c6c;
+  line-height: 19.36px;
+}
+
+/* FOOTER STYLING STARTS */
+footer {
+  padding: 3rem 4rem;
+  background-color: #111;
+}
+
+footer img {
+  width: auto;
+  height: 2rem;
+}
+
+footer span {
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.footer-links {
+  /* display: grid;
+    grid-template-columns: repeat(3, 1fr); */
+  display: flex;
+  justify-content: space-between;
+  padding-top: 2rem;
+}
+
+.footer-links h3 {
+  color: var(--tertiary-clr);
+  padding-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+.footer-links p {
+  color: #fff;
+  line-height: 2;
+  font-size: 1rem;
+}
+
+@media (min-width: 560px) {
+  .order {
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+    align-items: flex-start;
+  }
+  .top div {
+    width: 140px;
+  }
+  .trash {
+    display: none;
+  }
+  .trash-mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: self-end;
+    justify-content: flex-end;
+    background-color: #f2f1f1;
+    border-radius: 50%;
+    padding: 5px;
+    width: 30px;
+  }
+  .bottom-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .quantity2 {
+    display: block;
+    color: #5b5b5b;
+    font-size: 24px;
+  }
+  .bottom-title p {
+    display: none;
+  }
+}
